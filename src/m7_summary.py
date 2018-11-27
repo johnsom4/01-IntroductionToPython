@@ -2,10 +2,10 @@
 An exercise that summarizes what you have learned in this Session.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and Michael Johnson .
 """
 ########################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
@@ -25,6 +25,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #
 #    - Makes the SimpleTurtle go to the Point at (100, -40).
 #
+
 #    - Makes the SimpleTurtle put its pen DOWN
 #         (so that the next movements will return to leaving a "trail").
 #
@@ -43,3 +44,17 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   As always, COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
+
+import rosegraphics as rg
+
+window = rg.TurtleWindow()
+
+andy = rg.SimpleTurtle()
+andy.pen = rg.Pen('blue', 10)
+andy.speed = 5
+
+andy.left(90)
+andy.forward(200)
+
+andy.pen_up()
+
